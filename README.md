@@ -1,5 +1,5 @@
 
-**Paper**: *A Comparative Analysis of Third-Party Script Behaviour in Consent-Based and Implicit Web Tracking* (CODASPY 2026)
+**Paper**: *A Comparative Analysis of Third-Party Script Behaviour in Consent-Based and Implicit Web Tracking* 
 
 ## Overview
 
