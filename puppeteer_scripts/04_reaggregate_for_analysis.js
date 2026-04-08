@@ -42,9 +42,6 @@ function getAdAnalyticsCount(phaseData) {
   ].length;
 }
 
-/**
- * Fix: T3 metrics calculation (only for windowed data)
- */
 function computeT3Metrics(preData, postData) {
   if (!preData || !postData) return null;
   
@@ -121,7 +118,7 @@ function aggregateCBTPre(siteData) {
 }
 
 // ============================================================================
-// Aggregation Function: CBT-Reject (Core Fix)
+// Aggregation Function: CBT-Reject
 // ============================================================================
 function aggregateCBTReject(siteData) {
   const preData = siteData.phases?.pre_interaction;
@@ -262,9 +259,7 @@ function aggregateIT(siteData) {
   };
 }
 
-// ============================================================================
-// File Processing
-// ============================================================================
+
 
 function loadAllSites(inputDir) {
   if (!fs.existsSync(inputDir)) {
