@@ -2,12 +2,6 @@
  * 02_detect_banner.js
  * ------------------------------------
  * Minimal + Fast + Robust timeout handling (no longer throws site timeouts to top level causing Fatal).
- * Key updates (compared to V1.0):
- *  - Site task timeout (TASK_TIMEOUT) is gracefully captured and written to disk, won't trigger process-level Fatal.
- *  - page can be closed in finally on timeout/exception, avoiding handle leaks.
- *  - Added lightweight preflight (favicon HEAD/GET, 2.5s) to sort URL variants, reducing blind timeouts.
- *  - Still maintains "single fast render + strong signal matching" to maximize throughput.
- *
  * Run example:
  *   node 02_detect_banner_simple.js --input=./output/valid_sites.csv --concurrency=12
  */
